@@ -131,4 +131,48 @@ h1{
     border: 5px solid #171717;
 }
 
+@media (max-width: 768px){
 
+    body{
+        padding: 0px;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    body h1{
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 290px;
+        margin-top: 40px;
+        height: 300px;
+    }
+
+    .celula{
+        width: 80px;
+        height: 80px;
+    }
+
+    .X{
+        width: 80px;
+        height: 80px;
+    }
+
+    .O{
+        width: 80px;
+        height: 80px;
+    }
+
+    .containerTelaEscura{
+        margin-top: 30px;
+    }
+
+    #botaoResetar{
+        margin-top: 30px;
+    }
+
+}

@@ -126,3 +126,41 @@ footer{
     flex-grow: 1;
 }
 
+@media (max-width: 768px){
+    
+    body{
+        overflow: auto;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    .containerFormularios{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .formJog{
+        width: 250px;
+        height: 300px;
+    }
+
+    .formJog button{
+        width: 150px;
+    }
+
+    .formComp{
+        margin-top: 15px;
+        width: 250px;
+        height: 300px;
+    }
+
+    .formComp button{
+        width: 150px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
