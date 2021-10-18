@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #2E2E2E;
+    color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+h1{
+    width: 100vw;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    max-width: 500px;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.celula, .X, .O{
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 4px 2px;
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: #B8B8B8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-escura{
+    width: 500px;
+    height: 10vh;
+    opacity: 95%;
+    background-color: #171717;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tituloVencedor{
+    margin-top: 10px;
+}
+
+.containerTelaEscura{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.containerBotao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /* margin-top: 5px; */
+}
+
+.X{
+    color: #643FF8;
+}
+
+.O{
+    color: #FFDB59;
+}
+
+#botaoResetar{
+    width: 250px;
+    height: 7vh;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#botaoResetar:hover{
+    cursor: pointer;
+    background-color: #B8B8B8;
+    color: #171717;
+    border: 5px solid #171717;
+}
+
+

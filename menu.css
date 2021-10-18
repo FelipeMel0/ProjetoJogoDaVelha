@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2E2E2E;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.tituloModo{
+    margin-top: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.containerFormularios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.formJog{
+    background-color: #bb94ee;
+    height: 500px;
+    width: 450px;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formJog h2{
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.formJog button{
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #8470FF;
+    color: white;
+    border-radius: 10px;
+    border: 5px solid white;
+    transition: 0.3s;
+}
+
+.formJog button:hover{
+    cursor: pointer;
+    background-color: #372990;
+}
+
+.formComp{
+    background-color: #FEDF90;
+    height: 500px;
+    width: 450px;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formComp h2{
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.formComp button{
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #FFFACA;
+    color: black;
+    border-radius: 10px;
+    border: 5px solid white;
+    transition: 0.3s;
+}
+
+.formComp button:hover{
+    cursor: pointer;
+    background-color: #ffea4d;
+}
+
+footer{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex-grow: 1;
+}
+
