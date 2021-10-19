@@ -83,7 +83,7 @@ function encerrarJogo(vencedor = null){
     if(vencedor){
         h2.innerHTML = `Jogador ${vencedor}`
     } else {
-        h2.innerHTML = "Empatou"
+        h2.innerHTML = "Empate"
     }
 
 }
