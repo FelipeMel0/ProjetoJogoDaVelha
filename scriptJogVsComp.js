@@ -87,7 +87,7 @@ function checarEmpate() {
             }
 
         }
-        
+
     }
     return x + o === 9 ? true : false
 }
@@ -101,7 +101,7 @@ function encerrarJogo(vencedor = null) {
     telaEscura.appendChild(h2)
 
     if (vencedor) {
-        h2.innerHTML = `${vencedor}`
+        h2.innerHTML = `Jogador ${vencedor}`
     } else {
         h2.innerHTML = "Empate"
     }
