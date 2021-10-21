@@ -23,6 +23,8 @@ document.addEventListener("click", (event) => {
     }
 })
 
+document.getElementById("tituloVencedor").style.display = "none"
+
 function jogar(id) {
     const celula = document.getElementById(id)
     turno = checarTurno ? jogadorX : jogadorO
@@ -30,6 +32,13 @@ function jogar(id) {
     celula.classList.remove("celula")
     celula.classList.add(turno)
     checarVencedor(turno)  
+
+    if (turno == jogadorX) {
+        document.getElementById("indicadorJogador").innerHTML = "<p>O</p>"
+    } else {
+        document.getElementById("indicadorJogador").innerHTML = "<p>X</p>"
+    }
+
 }
 
 function checarVencedor(turno) {
@@ -73,17 +82,26 @@ function checarEmpate(){
 }
 
 function encerrarJogo(vencedor = null){
-
     const telaEscura = document.getElementById("tela-escura")
-    const h2 = document.createElement("h2")
-
     telaEscura.style.display = "block"
-    telaEscura.appendChild(h2)
 
-    if(vencedor){
-        h2.innerHTML = `Jogador ${vencedor}`
+    document.getElementById("tituloVencedor").style.display = "flex"
+    document.getElementById("tituloVencedor").style.justifyContent = "center"
+    document.getElementById("tituloVencedor").style.alignContent = "center"
+    document.getElementById("tituloVencedor").style.marginTop = "5px"
+
+    if (vencedor) {
+        document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
+
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+
     } else {
-        h2.innerHTML = "Empate"
+        document.getElementById("resultadoVencedor").innerHTML = "Empate"
+
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
     }
 
 }
