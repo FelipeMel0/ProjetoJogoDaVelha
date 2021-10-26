@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Styles/style.css" />
+        <title>Jogo da Velha</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
-    <title>Jogo da Velha</title>
-</head>
+    <body>
+        <h1>Jogo da Velha</h1>
 
-<body>
-
-    <h1>Jogo da Velha</h1>
-
-    <main>
-
-        <div class="container">
-
-            <div class="grid">
-                <div class="celula" id="0"></div>
-                <div class="celula" id="1"></div>
-                <div class="celula" id="2"></div>
-                <div class="celula" id="3"></div>
-                <div class="celula" id="4"></div>
-                <div class="celula" id="5"></div>
-                <div class="celula" id="6"></div>
-                <div class="celula" id="7"></div>
-                <div class="celula" id="8"></div>
+        <main>
+            <div class="container">
+                <div class="grid">
+                    <div class="celula" id="0"></div>
+                    <div class="celula" id="1"></div>
+                    <div class="celula" id="2"></div>
+                    <div class="celula" id="3"></div>
+                    <div class="celula" id="4"></div>
+                    <div class="celula" id="5"></div>
+                    <div class="celula" id="6"></div>
+                    <div class="celula" id="7"></div>
+                    <div class="celula" id="8"></div>
+                </div>
             </div>
+        </main>
 
+        <div class="containerTelaEscura">
+            <div id="tela-escura">
+                <p class="tituloVencedor">Vencedor:</p>
+                <p class="resultadoVencedor"></p>
+            </div>
         </div>
-    </main>
 
-    <div class="containerTelaEscura">
-        <div id="tela-escura">
-            <p class="tituloVencedor">Vencedor: </p>
-            <p class="resultadoVencedor"></p>
+        <div class="containerBotao">
+            <button id="botaoResetar">RESETAR</button>
+            <form action="index.html">
+                <button id="botaoVoltar">VOLTAR AO MENU</button>
+            </form>
         </div>
-    </div>
-    
-    <div class="containerBotao">
-        <button id="botaoResetar">RESETAR</button>
-        <form action="index.html">
-            <button id="botaoVoltar">VOLTAR AO MENU</button>
-        </form>
-    </div>
 
-    <select id="dificuldade">
-        <option>Fácil</option>
-        <option>Médio</option>
-        <option>Difícil</option>
-    </select>
+        <div class="containerDificuldade">
+            <select id="dificuldade">
+                <option>Fácil</option>
+                <option>Médio</option>
+                <option>Difícil</option>
+            </select>
+        </div>
 
-    <script src="Scripts/scriptJogVsComp.js"></script>
-
-</body>
-
+        <script src="Scripts/scriptJogVsComp.js"></script>
+    </body>
 </html>
