@@ -92,27 +92,18 @@ function encerrarJogo(vencedor = null){
     document.getElementById("tituloVencedor").style.alignContent = "center"
     document.getElementById("tituloVencedor").style.marginTop = "5px"
 
-    if (vencedor) {
-        document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
+    // if (vencedor) {
+    //     document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
 
-        document.getElementById("tituloIndicador").style.display = "none"
-        document.getElementById("indicadorJogador").style.display = "none"
+    //     document.getElementById("tituloIndicador").style.display = "none"
+    //     document.getElementById("indicadorJogador").style.display = "none"
 
-    const telaEscura = document.getElementById("tela-escura")
+    // const telaEscura = document.getElementById("tela-escura")
     const h2 = document.createElement("h2")
 
     telaEscura.style.display = "block"
     telaEscura.appendChild(h2)
 
-    // if(vencedor){
-    //     h2.innerHTML = `Jogador ${vencedor}`
-    // } else {
-    //     document.getElementById("resultadoVencedor").innerHTML = "Empate"
-    //     document.getElementById("tituloIndicador").style.display = "none"
-    //     document.getElementById("indicadorJogador").style.display = "none"
-
-    //     h2.innerHTML = "Empatou"
-    // }
     if (vencedor) {
         document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
         document.getElementById("tituloIndicador").style.display = "none"
@@ -134,4 +125,4 @@ function resetar(){
 }
 
 document.getElementById("botaoResetar").addEventListener("click", resetar)
-}
+
