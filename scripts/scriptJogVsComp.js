@@ -143,6 +143,12 @@ function jogar(id, turno) {
     celula.classList.remove("celula")
     celula.classList.add(turno)
     checarVencedor(turno)
+
+    if (turno == jogadorX) {
+        document.getElementById("indicadorJogador").innerHTML = "<p>O</p>"
+    } else {
+        document.getElementById("indicadorJogador").innerHTML = "<p>X</p>"
+    }
 }
 
 function checarVencedor(turno) {
@@ -190,12 +196,26 @@ function encerrarJogo(vencedor = null) {
     const h2 = document.createElement("h2")
 
     telaEscura.style.display = "block"
+
+    document.getElementById("tituloVencedor").style.display = "flex"
+    document.getElementById("tituloVencedor").style.justifyContent = "center"
+    document.getElementById("tituloVencedor").style.alignContent = "center"
+    document.getElementById("tituloVencedor").style.marginTop = "5px"
+
     telaEscura.appendChild(h2)
 
     if (vencedor) {
-        h2.innerHTML = `Jogador ${vencedor}`
+        document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+        // h2.innerHTML = `Jogador ${vencedor}`
     } else {
-        h2.innerHTML = "Empate"
+        document.getElementById("resultadoVencedor").innerHTML = "Empate"
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+        // h2.innerHTML = "Empate"
     }
 
     jogando = false

@@ -23,6 +23,8 @@ document.addEventListener("click", (event) => {
     }
 })
 
+document.getElementById("tituloVencedor").style.display = "none"
+
 function jogar(id) {
     const celula = document.getElementById(id)
     turno = checarTurno ? jogadorX : jogadorO
@@ -30,6 +32,13 @@ function jogar(id) {
     celula.classList.remove("celula")
     celula.classList.add(turno)
     checarVencedor(turno)  
+
+    if (turno == jogadorX) {
+        document.getElementById("indicadorJogador").innerHTML = "<p>O</p>"
+    } else {
+        document.getElementById("indicadorJogador").innerHTML = "<p>X</p>"
+    }
+
     document.getElementById("indicar")
 }
 
@@ -76,15 +85,46 @@ function checarEmpate(){
 function encerrarJogo(vencedor = null){
 
     const telaEscura = document.getElementById("tela-escura")
+    telaEscura.style.display = "block"
+
+    document.getElementById("tituloVencedor").style.display = "flex"
+    document.getElementById("tituloVencedor").style.justifyContent = "center"
+    document.getElementById("tituloVencedor").style.alignContent = "center"
+    document.getElementById("tituloVencedor").style.marginTop = "5px"
+
+    if (vencedor) {
+        document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
+
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+    const telaEscura = document.getElementById("tela-escura")
     const h2 = document.createElement("h2")
 
     telaEscura.style.display = "block"
     telaEscura.appendChild(h2)
 
-    if(vencedor){
-        h2.innerHTML = `Jogador ${vencedor}`
+    // if(vencedor){
+    //     h2.innerHTML = `Jogador ${vencedor}`
+    // } else {
+    //     document.getElementById("resultadoVencedor").innerHTML = "Empate"
+    //     document.getElementById("tituloIndicador").style.display = "none"
+    //     document.getElementById("indicadorJogador").style.display = "none"
+
+    //     h2.innerHTML = "Empatou"
+    // }
+    if (vencedor) {
+        document.getElementById("resultadoVencedor").innerHTML = `Jogador ${vencedor}`
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+        // h2.innerHTML = `Jogador ${vencedor}`
     } else {
-        h2.innerHTML = "Empatou"
+        document.getElementById("resultadoVencedor").innerHTML = "Empate"
+        document.getElementById("tituloIndicador").style.display = "none"
+        document.getElementById("indicadorJogador").style.display = "none"
+
+        // h2.innerHTML = "Empate"
     }
 
 }
@@ -94,3 +134,4 @@ function resetar(){
 }
 
 document.getElementById("botaoResetar").addEventListener("click", resetar)
+}
