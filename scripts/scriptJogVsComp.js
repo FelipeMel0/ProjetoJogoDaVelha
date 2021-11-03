@@ -21,6 +21,7 @@ let seletorDificuldade = document.getElementById("dificuldade")
 
 let gameMode = seletorDificuldade.options[seletorDificuldade.selectedIndex].value
 
+document.getElementById("tituloVencedor").style.display = "none"
 
 seletorDificuldade.addEventListener("change", () => {
 
@@ -196,6 +197,8 @@ function encerrarJogo(vencedor = null) {
     const h2 = document.createElement("h2")
 
     telaEscura.style.display = "block"
+    // const telaEscura = document.getElementById("tela-escura")
+    // telaEscura.style.display = "block"
 
     document.getElementById("tituloVencedor").style.display = "flex"
     document.getElementById("tituloVencedor").style.justifyContent = "center"
