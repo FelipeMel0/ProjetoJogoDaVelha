@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles/style.css" />
-        <title>Como jogar?</title>
-    </head>
-    <body>
-        <header>
-            <h1>Como jogar?</h1>
-        </header>
-        <main>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Como jogar?</title>
+</head>
+
+<body>
+    <header>
+        <h1>Como jogar?</h1>
+    </header>
+    <main id="conteudo">
+        <div id="mainComoJogar">
             <div class="jogvsjog">
                 <h2>Modo "Jogador vs Jogador"</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quis porro ad placeat, nobis
-                    hic, velit laboriosam odio omnis voluptas, veritatis rerum vitae modi animi cupiditate atque! Nemo,
-                    quia ipsa!
+                <p class="textoJogvsJog">
+                    No modo "Jogador vs Jogador", a cada clique na tela troca a vez do jogador. Você pode chamar seus
+                    amigos
+                    para disputarem, passando o mouse para outro sempre que for a vez do próximo.
+                    Há um tela abaixo que
+                    mostra de quem é a vez e mostra também o resultado da partida quando ela acaba.
                 </p>
+
+                <img src="imgs/mostrandovez.JPG" alt="" class="imagemVez">
             </div>
 
             <div class="jogvscomp">
                 <h2>Modo "Jogador vs Computador"</h2>
-                <p>
+                <p class="textoJogvsComp">
                     No modo "Jogador vs Computador", o Jogador X começa a partida e o computador faz sua jogada meio
                     segundo depois da escolha do Jogador X.
-                </p>
-                <p>
                     Você pode escolher a dificuldade de jogo através do menu logo abaixo dos botões, clicando e
                     selecionando a dificuldade desejada.
                 </p>
 
                 <img src="imgs/menuseletor.PNG" alt="" class="imagemSeletor">
             </div>
-        </main>
-        <footer></footer>
-    </body>
+        </div>
+        
+        <form action="index.html">
+            <button id="botaoVoltar">Voltar ao menu</button>
+        </form>
+
+    </main>
+
+</body>
+
 </html>

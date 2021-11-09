@@ -184,6 +184,62 @@ h1{
     outline: none;
 }
 
+#conteudo{
+    display: flex;
+    /* flex-direction: column;
+    width: 100vw;
+    height: 100vh; */
+}
+
+#mainComoJogar{
+    padding: 100px;
+    flex-direction: row;
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.jogvsjog, .jogvscomp{
+    display: flex;
+    margin: 25px;
+    flex-direction: column; 
+    width: 700px;
+    height: 700px;
+}
+
+.jogvsjog h2{
+    color: #643FF8;
+    margin-bottom: 15px;
+}
+
+.imagemSeletor, .imagemVez{
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.jogvscomp h2{
+    color: #FFDB59;
+    margin-bottom: 15px;
+}
+
+.textoJogvsJog, .textoJogvsComp{
+    max-width: 950px;
+}
+
+footer{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex-grow: 1;
+}
+
+
 /* .jogvsjog h2 {  
     color: #8470FF;
 }

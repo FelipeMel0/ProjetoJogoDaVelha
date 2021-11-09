@@ -126,6 +126,33 @@ footer{
     flex-grow: 1;
 }
 
+.buttonComoJogar{
+    width: 200px; 
+    height: 7vh; 
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.buttonComoJogar:hover{
+    cursor: pointer;
+    background-color: #B8B8B8;
+    color: #171717;
+    border: 5px solid #171717;
+}
+
+.formComoJogar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 @media (max-width: 768px){
     
     body{
