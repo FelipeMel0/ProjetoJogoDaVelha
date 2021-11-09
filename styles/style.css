@@ -186,9 +186,9 @@ h1{
 
 #conteudo{
     display: flex;
-    /* flex-direction: column;
-    width: 100vw;
-    height: 100vh; */
+    flex-direction: column;
+    /* width: 100vw;
+    height: 100vh;  */
 }
 
 #mainComoJogar{
@@ -239,21 +239,6 @@ footer{
     flex-grow: 1;
 }
 
-
-/* .jogvsjog h2 {  
-    color: #8470FF;
-}
-
-.jogvscomp h2 {
-    color: #FEDF90;
-}
-
-.imagemSeletor{
-    border: 5px solid white;
-    border-radius: 15px;
-    margin-top: 10px;
-} */
-
 @media (max-width: 768px){
 
     body{
@@ -297,6 +282,27 @@ footer{
 
     #botaoResetar, #botaoVoltar{
         margin-top: 30px;
+    }
+
+    #mainComoJogar{
+        display: flex;
+        flex-direction: column;
+        padding: 350px;
+    }
+
+    .textoJogvsJog, .textoJogvsComp{
+        max-width: 350px;
+        margin-left: 255px;
+    }
+
+    .imagemSeletor, .imagemVez{
+        /* max-width: 150px;
+        max-height: 150px; */
+        display: none;
+    }
+
+    .jogvsjog h2, .jogvscomp h2{
+        margin-left: 255px;
     }
 
 }
